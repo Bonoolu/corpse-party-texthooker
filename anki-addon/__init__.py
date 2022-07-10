@@ -30,7 +30,7 @@ def clipboard_loop(_):
                 prev_clipboard_text_stripped = clipboard_text_stripped
                 clipboard.setText(clipboard_text_stripped)
                 if audio_filename:
-                    print(f"{audio_filename}.opus", clipboard_text_stripped)
+                    print(f"[sound:{audio_filename}.opus]", clipboard_text_stripped)
                 else:
                     print(clipboard_text_stripped)
             elif result:
