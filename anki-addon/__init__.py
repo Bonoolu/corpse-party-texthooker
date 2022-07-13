@@ -22,23 +22,20 @@ def clipboard_loop(_):
             if result:
                 audio_filename = result[0]
                 clipboard_text_stripped = pattern_sound.sub("", clipboard_text_orig)
+                clipboard.setText(clipboard_text_stripped)
             else:
                 clipboard_text_stripped = clipboard_text_orig
             if clipboard_text_stripped and clipboard_text_stripped != prev_clipboard_text_stripped:
                 if not result:
                     audio_filename = ""
                 prev_clipboard_text_stripped = clipboard_text_stripped
-                clipboard.setText(clipboard_text_stripped)
                 if audio_filename:
                     print(f"[sound:{audio_filename}.opus]", clipboard_text_stripped)
                 else:
                     print(clipboard_text_stripped)
-            elif result:
-                audio_filename = ""
-                clipboard.setText(clipboard_text_stripped)
         except Exception as e:
             print("Error:", e)
-        time.sleep(0.1)
+        time.sleep(0.3)
         if not mw.isVisible():
             return
 
