@@ -63,6 +63,8 @@ def add_audio_to_most_recent_node(_, __):
         audio_path = f'{audio_dir}{audio_filename}.opus'
         mw.col.media.add_file(audio_path)
         note["SentAudio"] = f'[sound:{audio_filename}.opus]'
+    note.tags.append('corpse')
+    note.tags.append('visual-novel')
     screenshot_path = make_screenshot()
     screenshot_filename = screenshot_path.replace("/tmp/", "")
     mw.col.media.add_file(screenshot_path)
