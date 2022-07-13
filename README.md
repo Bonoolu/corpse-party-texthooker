@@ -20,7 +20,7 @@ A working anki mining setup with yomichan. [Here is a tutorial](https://www.yout
 
 ## Notice about macOS
 The only script in this repo which wont work on macOS is [corpse-screenshot.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/corpse-screenshot.sh)
-If you'll have to replace this script with something lese if want screenshots in you anki notes.
+If you'll have to replace this script with something lese if you want screenshots in you anki notes.
 
 ## Notice about Windows
 The texthooker should work out of the box, but the audio hooker and screengrabber wont.
