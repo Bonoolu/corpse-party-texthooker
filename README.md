@@ -67,7 +67,7 @@ You could probably do something similar with shareX or with AutoHotKey.
     Example Clipboard: ありがとう.
 5. The user sees the Sentence in Yomichan and adds one word to anki
 
-6. The user presses a shortcut to execute usr1anki.sh which sends a USR1 unix signal to the anki addon
+6. The user presses a shortcut to execute usr1anki.sh which sends an USR1 unix signal to the anki addon
 
 7. The anki addon adds the audio file from step 4 to the most recent anki note
 
@@ -85,15 +85,17 @@ Step 1 is only the text hooker without the audio hooker or the screen grabber.
 
 3. Convert all the audio files with ffmpeg to opus. Linux users can use [convert.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/convert.sh). Windows users can use [QWinFF](https://qwinff.github.io/)
 
-4. Edit the anki mod [anki-mod/__init__.py](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/anki-mod/__init__.py)
+4. If you don't have a 4k Display, edit this file and change the numbers to match your screen size [corpse-screenshot.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/corpse-screenshot.sh) 
+
+5. Edit the anki mod [anki-mod/__init__.py](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/anki-mod/__init__.py)
 
     4.1. change the path to your audio files on line 65
 
     4.2. change the path to corpse-screenshot.sh on line 55 OR just put the file into your PATH
 
-5. Install the anki-addon by moving the anki-addon directory to .local/share/Anki2/addons21 or C:\Users\Administrator\AppData\Roaming\Anki2\addons21
+6. Install the anki-addon by moving the anki-addon directory to .local/share/Anki2/addons21 or C:\Users\Administrator\AppData\Roaming\Anki2\addons21
 
-6. Create a keyboard shortcut in your operating system to [usr1anki.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/usr1anki.sh)
+7. Create a keyboard shortcut in your operating system to [usr1anki.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/usr1anki.sh)
 
 ## How to Use
 
