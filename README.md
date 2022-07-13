@@ -91,7 +91,9 @@ Step 1 is only the text hooker without the audio hooker or the screen grabber.
 
 4.2   change the path to corpse-screenshot.sh on line 55 OR just put the file into your PATH
 
-5. Create a keyboard shortcut in your operating system to [usr1anki.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/usr1anki.sh)
+5. Install the anki-addon by moving the anki-addon directory to .local/share/Anki2/addons21 or C:\Users\Administrator\AppData\Roaming\Anki2\addons21
+
+6. Create a keyboard shortcut in your operating system to [usr1anki.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/usr1anki.sh)
 
 ## How to Use
 
