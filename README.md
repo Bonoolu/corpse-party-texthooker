@@ -87,9 +87,9 @@ Step 1 is only the text hooker without the audio hooker or the screen grabber.
 
 4. Edit the anki mod [anki-mod/__init__.py](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/anki-mod/__init__.py)
 
-4.1   change the path to your audio files on line 65
+    4.1. change the path to your audio files on line 65
 
-4.2   change the path to corpse-screenshot.sh on line 55 OR just put the file into your PATH
+    4.2. change the path to corpse-screenshot.sh on line 55 OR just put the file into your PATH
 
 5. Install the anki-addon by moving the anki-addon directory to .local/share/Anki2/addons21 or C:\Users\Administrator\AppData\Roaming\Anki2\addons21
 
