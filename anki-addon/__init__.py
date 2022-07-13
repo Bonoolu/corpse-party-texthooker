@@ -66,7 +66,7 @@ def add_audio_to_most_recent_node(_, __):
     screenshot_path = make_screenshot()
     screenshot_filename = screenshot_path.replace("/tmp/", "")
     mw.col.media.add_file(screenshot_path)
-    note["Image"] = f'<img alt="snapshot" src="{screenshot_filename}">]'
+    note["Image"] = f'<img alt="snapshot" src="{screenshot_filename}">'
     mw.col.update_note(note)
     browser = aqt.dialogs.open('Browser', mw.window())
     browser.activateWindow()
