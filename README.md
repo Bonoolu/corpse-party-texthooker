@@ -5,7 +5,7 @@ Text and audio hooker for the visual novel Corpse Party (2021) with Anki integra
 
 A working anki mining setup with yomichan. [Here is a tutorial](https://www.youtube.com/watch?v=OJxndUGN8Cg)
 
-## Install Dependencies
+## Dependencies
 
 [dnspy](https://github.com/dnSpy/dnSpy) is needed for patching the game and installing the texthooker.
 
