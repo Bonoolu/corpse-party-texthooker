@@ -52,7 +52,7 @@ def get_last_note_id():
 
 
 def make_screenshot():
-    with os.popen('corpse-screenshot', 'r') as screenshot:
+    with os.popen('corpse-screenshot.sh', 'r') as screenshot:
         return screenshot.read().replace("\n", "")
 
 
@@ -62,7 +62,8 @@ def add_audio_to_most_recent_node(_, __):
         return
     note = mw.col.get_note(nid)
     if audio_filename:
-        audio_path = f'/home/admin/Development/IdeaProjects/python/corpse-party-texthooker/sound/{audio_filename}.opus'
+        audio_dir = '/home/admin/Development/IdeaProjects/python/corpse-party-texthooker/sound/'
+        audio_path = f'{audio_dir}{audio_filename}.opus'
         mw.col.media.add_file(audio_path)
         note["SentAudio"] = f'[sound:{audio_filename}.opus]'
     screenshot_path = make_screenshot()
@@ -81,7 +82,7 @@ def add_audio_to_most_recent_node(_, __):
 
 signal.signal(signal.SIGUSR1, add_audio_to_most_recent_node)
 audio_filename = ""
-pattern_sound = re.compile(r'\[Sound:(.*)]')
+pattern_sound = re.compile(r'\[Sound:(.*)]', flags=re.IGNORECASE)
 clipboard = QGuiApplication.clipboard()
 action = QAction("Start corpse party addon", mw)
 qconnect(action.triggered, start_clipboard_loop)
