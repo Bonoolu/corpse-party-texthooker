@@ -1,4 +1,4 @@
-# Corpsep Party Texthooker
+# Corpse Party Texthooker
 Text and audio hooker for the visual novel Corpse Party (2021) with Anki integration
 ## 
 ## Prerequisites
