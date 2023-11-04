@@ -1,6 +1,8 @@
 # Corpse Party Texthooker
 Text and audio hooker for the visual novel Corpse Party (2021) with Anki integration
 ## 
+## Disclaimer
+The mod in this repositoy is not easy to setup and this is merely a documentation of how i managed to text and audio hook the visual novel. Do not expect any support. The setup requires technical knowledge and has to be done manually.
 ## Prerequisites
 
 A working anki mining setup with yomichan. [Here is a tutorial](https://www.youtube.com/watch?v=OJxndUGN8Cg)
@@ -20,7 +22,7 @@ A working anki mining setup with yomichan. [Here is a tutorial](https://www.yout
 
 ## Notice about macOS
 The only script in this repo which wont work on macOS is [corpse-screenshot.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/corpse-screenshot.sh)
-If you'll have to replace this script with something lese if you want screenshots in you anki notes.
+If you'll have to replace this script with something else if you want screenshots in your anki notes.
 
 ## Notice about Windows
 The texthooker should work out of the box, but the audio hooker and screengrabber wont.
@@ -48,7 +50,7 @@ You could probably do something similar with shareX or with AutoHotKey.
 - [usr1anki.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/usr1anki.sh)
 
   This script sends a signal to the anki addon to update the most recent note. You need to bind the script to a shortcut in your operating system.
-  This script works on Linux/BSD/macOs, but not on windows.
+  This script works on Linux/BSD/macOS, but not on Windows.
   
 - [convert.sh](https://github.com/Bonoolu/corpse-party-texthooker/blob/main/convert.sh)
 
@@ -74,7 +76,7 @@ You could probably do something similar with shareX or with AutoHotKey.
 8. The anki addon executes corpse-screenshot.sh and adds the pictures to the most recent anki note
 
 ## How to install
-If you are using macOS or Windows then please read notice about your Operating System.
+If you are using macOS or Windows then please read the notices above.
 Step 1 should work on ANY operating system.
 Step 1 is only the text hooker without the audio hooker or the screen grabber.
 
